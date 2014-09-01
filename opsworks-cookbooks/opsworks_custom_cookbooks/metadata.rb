@@ -8,8 +8,10 @@ recipe "opsworks_custom_cookbooks::checkout", "Checkout custom Cookbooks"
 recipe "opsworks_custom_cookbooks::load", "Load custom Cookbooks"
 recipe "opsworks_custom_cookbooks::execute", "Execute custom Cookbooks"
 recipe "opsworks_custom_cookbooks::update", "Update custom Cookbooks"
+recipe "opsworks_custom_cookbooks::default"
 
 depends "scm_helper"
+depends "apt"
 
 attribute "opsworks_custom_cookbooks/repository",
   :display_name => "URL to you Chef cookbooks",
