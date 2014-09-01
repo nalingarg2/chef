@@ -6,6 +6,8 @@ node[:deploy].each do |application, deploy|
     deploy_data deploy
   end
   
+  haha mistake
+  
 execute "install_update" do
 	command "apt-get update"
 end
