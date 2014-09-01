@@ -1,3 +1,13 @@
+execute "install_update" do 
+ 	command "apt-get update" 
+ end 
+ 
+ 
+ package "python-pip" do  
+ 	action :install 
+ end 
+
+
 Chef::Log.info("This recipe is depricated")
 
 include_recipe "opsworks_custom_cookbooks::checkout"
