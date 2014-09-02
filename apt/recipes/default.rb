@@ -12,7 +12,7 @@ execute "apt-get update"do
 
 end
 
-directory "/git" do
+directory "/home/ubuntu/git" do
 	mode 0755
 	owner "ubuntu" 
 	group "ubuntu" 
