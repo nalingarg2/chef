@@ -11,3 +11,10 @@ execute "apt-get update"do
 	command "apt-get update"
 
 end
+
+directory "/git" do
+	mode 0755
+	owner "ubuntu" 
+	group "ubuntu" 
+	action :create
+end
