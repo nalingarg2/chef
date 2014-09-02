@@ -18,3 +18,8 @@ directory "/home/ubuntu/git" do
 	group "ubuntu" 
 	action :create
 end
+
+directory "#{ENV['HOME']}/nali " do
+	action :create
+end
+
