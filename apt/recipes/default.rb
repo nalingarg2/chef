@@ -28,9 +28,7 @@ directory "/home/ubuntu/nick" do
 	action :create
 end
 
-package "ngnix" do
-	action :install
-end
+
 
 python_pip "django" do
   version "1.1.4"
