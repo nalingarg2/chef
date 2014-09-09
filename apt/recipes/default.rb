@@ -28,11 +28,19 @@ directory "/home/ubuntu/nick" do
 	action :create
 end
 
-python_pip "django" do
-  version "1.1.4"
+package "ngnix" do
+	action :install
 end
 
-python_pip "gunicorn"
+python_pip "django" do
+  version "1.1.4"
+  action :install
+end
+
+python_pip "gunicorn" do
+	action :install
+end
+
 
 #directory "#{ENV['HOME']}/nali " do
 #	action :create
