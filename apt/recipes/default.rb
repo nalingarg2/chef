@@ -32,7 +32,7 @@ end
 
 python_pip "django" do
   version "1.1.4"
-  action :install
+  
 end
 
 python_pip "gunicorn" do
