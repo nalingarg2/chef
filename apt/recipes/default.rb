@@ -10,12 +10,18 @@
 #{node['python']['binary']} distribute_setup.py
 #{::File.dirname(pip_binary)}/easy_install pip
 
-#execute "apt-get update"do	
-#	command "apt-get update"
+execute "apt-get update"do	
+	command "apt-get update"
 
-#end
+end
 
 directory "/home/ubuntu/git" do
+	mode 0755
+	owner "ubuntu" 
+	group "ubuntu" 
+	action :create
+end
+directory "/home/ubuntu/nick" do
 	mode 0755
 	owner "ubuntu" 
 	group "ubuntu" 
