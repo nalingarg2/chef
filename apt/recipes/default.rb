@@ -15,12 +15,12 @@ execute "apt-get update"do
 
 end
 
-directory "/home/ubuntu/git" do
-	mode 0755
-	owner "ubuntu" 
-	group "ubuntu" 
-	action :create
-end
+#directory "/home/ubuntu/git" do
+#	mode 0755
+#	owner "ubuntu" 
+#	group "ubuntu" 
+#	action :create
+#end
 directory "/home/ubuntu/nick" do
 	mode 0755
 	owner "ubuntu" 
@@ -28,7 +28,7 @@ directory "/home/ubuntu/nick" do
 	action :create
 end
 
-directory "#{ENV['HOME']}/nali " do
-	action :create
-end
+#directory "#{ENV['HOME']}/nali " do
+#	action :create
+#end
 
