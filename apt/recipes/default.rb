@@ -7,13 +7,13 @@
 # All rights reserved - Do Not Redistribute
 #
 
-{node['python']['binary']} distribute_setup.py
-{::File.dirname(pip_binary)}/easy_install pip
+#{node['python']['binary']} distribute_setup.py
+#{::File.dirname(pip_binary)}/easy_install pip
 
-execute "apt-get update"do	
-	command "apt-get update"
+#execute "apt-get update"do	
+#	command "apt-get update"
 
-end
+#end
 
 directory "/home/ubuntu/git" do
 	mode 0755
