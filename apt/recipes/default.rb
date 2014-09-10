@@ -28,6 +28,11 @@ directory "/home/ubuntu/nick" do
 	action :create
 end
 
+execute "apt-get install nginx"do	
+	command "apt-get install nginx"
+
+end
+
 
 
 #python_pip "django" do
