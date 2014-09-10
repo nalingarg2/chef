@@ -30,14 +30,11 @@ end
 
 
 
-python_pip "django" do
-  version "1.1.4"
+#python_pip "django" do
+ # version "1.1.4"
   
-end
+#end
 
-python_pip "gunicorn" do
-	action :install
-end
 
 
 #directory "#{ENV['HOME']}/nali " do
