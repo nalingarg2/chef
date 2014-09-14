@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: apt
+# Cookbook Name:: backend-setup
 # Recipe:: default
 #
 # Contact:: nhorelik@rapidsos.com
