@@ -33,6 +33,9 @@ execute "apt-get install nginx"do
 
 end
 
+package 'nginx' do
+  action :install
+end
 
 
 #python_pip "django" do
