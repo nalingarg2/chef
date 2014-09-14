@@ -38,8 +38,8 @@ execute "apt-get -y install nginx"do
 
 end
 
-execute "apt-get -y install unicorn"do	
-	command "apt-get -y install unicorn"
+execute "apt-get -y install gunicorn"do	
+	command "apt-get -y install gunicorn"
 
 end
 
