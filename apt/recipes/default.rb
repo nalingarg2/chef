@@ -2,56 +2,57 @@
 # Cookbook Name:: apt
 # Recipe:: default
 #
-# Copyright 2014, YOUR_COMPANY_NAME
+# Contact:: nhorelik@rapidsos.com
+# Copyright 2014, RapiSOS
 #
 # All rights reserved - Do Not Redistribute
 #
 
-#{node['python']['binary']} distribute_setup.py
-#{::File.dirname(pip_binary)}/easy_install pip
 
+#update before major install
 execute "apt-get update"do	
 	command "apt-get update"
-
 end
 
-#directory "/home/ubuntu/git" do
-#	mode 0755
-#	owner "ubuntu" 
-#	group "ubuntu" 
-#	action :create
-#end
-directory "/home/ubuntu/nick" do
-	mode 0755
-	owner "ubuntu" 
-	group "ubuntu" 
-	action :create
-end
-
+#install python-pip
 execute "apt-get -y install python-pip"do	
 	command "apt-get -y install python-pip"
-
 end
 
+#install python-dev
+execute "apt-get -y install python-dev"do	
+	command "apt-get -y install python-dev"
+end
+
+#install nginx
 execute "apt-get -y install nginx"do	
 	command "apt-get -y install nginx"
-
 end
 
+#install gunicorn
 execute "apt-get -y install gunicorn"do	
 	command "apt-get -y install gunicorn"
+end
 
+#install libpq-dev
+execute "apt-get -y install libpq-dev"do	
+	command "apt-get -y install libpq-dev"
+end
+
+#install postgresql
+execute "apt-get -y install postgresql"do	
+	command "apt-get -y install postgresql"
+end
+
+#install postgresql-contrib
+execute "apt-get -y install postgresql-contrib"do	
+	command "apt-get -y install postgresql-contrib"
+end
+
+#install python-psycopg2
+execute "apt-get -y install python-psycopg2"do	
+	command "apt-get -y install python-psycopg2"
 end
 
 
-#python_pip "django" do
- # version "1.1.4"
-  
-#end
-
-
-
-#directory "#{ENV['HOME']}/nali " do
-#	action :create
-#end
 
